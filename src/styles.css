@@ -1,5 +1,5 @@
 #modal{
-    background: rgba(190, 191, 195, .3);
+    background: rgba(190, 191, 195, .9);
     padding: 20px;
     position: absolute;
     top: 100px;
@@ -24,11 +24,15 @@
     width: 100px;
     border-left: 10px solid rgb(28, 6, 116);
     border-bottom: 10px solid rgb(28, 6, 116);
-    border-right: 10px solid rgb(28, 6, 116);
     border-top: 10px solid transparent;
     border-radius: 50%;
     animation: spinner 1s linear infinite;
     margin:100px auto;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    left: 0;
+    box-shadow: 10px 5px 5px gray;
 }
  
 @keyframes spinner {
@@ -39,4 +43,52 @@
     to {
         transform: rotate(360deg);
     }
+}
+#main{
+    margin:auto;
+    width: 400px;
+}
+#clickDate{
+    margin:10px auto;
+    width:400px;
+    height: 80px;
+    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow:10px 10px 5px rgb(36, 69, 158);
+    border-radius: 10px;
+    color:rgb(36, 69, 158);
+    background-color: azure;
+    cursor: pointer;
+}
+.inp{
+    width:400px;
+    height: 50px; 
+    margin:0px auto;
+    font-size:30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.span{
+    margin-top:10px;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.inp1{
+    width:20px;
+    height: 20px; 
+    cursor: pointer;
+}
+label{
+    cursor: pointer;
+}
+.span1{
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display:flex;
+}
+#modal p{
+    text-indent: 15px;
 }

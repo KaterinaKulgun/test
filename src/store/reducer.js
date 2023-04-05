@@ -1,7 +1,9 @@
-const reducer = (state = 123, action) => {
+const reducer = (state = {type:'',text:''}, action) => {
     switch (action.type) {
         case 'DATA_TYPE':
-        return action.payload;
+        return {...state,text:action.payload};
+        case 'FORMAT_TYPE':
+        return {...state,type:action.payload};
       default:
         return state;
     }
