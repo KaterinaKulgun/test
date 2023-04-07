@@ -11,11 +11,15 @@ let objData1 = {
   startWith: false,
   format: "json",
 };
+
 function AppTest() {
   const [showModal, setShowModal] = useState(false);
   const [objData, setObjData] = useState(() => {
-    const initialValue = JSON.parse(localStorage["text1"]);
-    return initialValue || objData1;
+    let initialValue = '';
+    if (localStorage["text1"]!=undefined){
+    initialValue = JSON.parse(localStorage["text1"]);
+    }
+    return initialValue!=''?initialValue:objData1;
   });
 
   useEffect(() => {
